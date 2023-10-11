@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i>Acesse o inspecionar > console para ver o resultado</i>
+    <script>
+        const altura = parseFloat(prompt("Por favor, insira sua altura (X.XX):"))
+        const peso = parseFloat(prompt("Por favor, insira seu peso (X):"))
+
+        if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <= 0) {
+            alert("Insira valores válidos para altura e peso")
+        } else {
+
+        const imc = peso / (altura * altura);
+
+        alert(`O IMC é: ${imc.toFixed(2)}`);
+        }
+
+    </script>
+</body>
+</html>

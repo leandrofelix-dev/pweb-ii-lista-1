@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i>Acesse o inspecionar > console para ver o resultado</i>
+    <script>
+        function getBiggerNumber(num1, num2, num3) {
+            return Math.max(num1, num2, num3)
+        }
+
+        const number1 = parseFloat(prompt("Insira o primeiro número:"))
+        const number2 = parseFloat(prompt("Insira o segundo número:"))
+        const number3 = parseFloat(prompt("Insira o terceiro número:"))
+
+        const resultado = getBiggerNumber(number1, number2, number3)
+        alert(`O maior número é: ${resultado}`)
+    </script>
+</body>
+</html>

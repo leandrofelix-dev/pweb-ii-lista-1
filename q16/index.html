@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i>Acesse o inspecionar > console para ver o resultado</i>
+    <script>
+        const number = Math.floor(Math.random() * 100)
+        let tries = 0
+
+        do {
+            const guess = parseInt(prompt("Adivinhe o número entre 1 e 100:"))
+
+            if (guess === number) {
+                alert("Parabéns!")
+                alert(`Você resolveu em ${tries} tentativas`)
+                break
+            } else {
+                if (guess < number) {
+                    alert("Tente um número maior.")
+                } else {
+                    alert("Tente um número menor.")
+                }
+                tries++
+        }
+        } while (true);
+    </script>
+</body>
+</html>

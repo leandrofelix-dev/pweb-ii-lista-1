@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i>Acesse o inspecionar > console para ver o resultado</i>
+    <script>
+        const number = parseInt(prompt("Insira um número:"))
+
+        if (isNaN(number)) {
+            alert("Insira um número válido")
+        } else {
+            for (let i = 1; i <= 10; i++) {
+                const result = number * i
+                console.log(`${number} x ${i} = ${result}`)
+            }
+        }
+
+    </script>
+</body>
+</html>

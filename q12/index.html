@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i>Acesse o inspecionar > console para ver o resultado</i>
+    <script>
+        const number = parseInt(prompt("Insira um número:"))
+
+        function isPrime(number) {
+            if (number <= 1) {
+                return false
+            }
+        
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false
+                }
+            }
+        
+            return true
+        }
+
+        if (isPrime(number)) {
+            console.log(`O número ${number} é primo`)
+        } else {
+            console.log(`O número ${number} não é primo`)
+        }
+
+    </script>
+</body>
+</html>
